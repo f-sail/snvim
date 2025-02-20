@@ -1,0 +1,75 @@
+-- *p-keymap* ------------------------------------------------------------------------------------------
+*pk-flash*
+nvx     s               -- 搜索
+nvx     S               -- 搜索 Treesitter 
+ v      r
+ vx     R               -- 搜索并范围选中
+ vx     f               -- 前向搜索
+ vx     t               -- 前向搜索
+ vx     F               -- 后向搜索
+ vx     T               -- 后向搜索
+
+*pk-tree*
+        <leader> tt     -- 切换 NvimTree 窗口的显示和隐藏状态
+        <leader> tf     -- 打开 NvimTree 窗口,并聚焦到当前文件位置
+        <leader> tc     -- 折叠 NvimTree 文件树
+        <leader> tr     -- 刷新 NvimTree 文件树
+
+        o               -- 选择
+        a               -- 创建
+        r               -- 重命名
+        c               -- 拷贝
+        x               -- 剪切
+        p               -- 粘贴
+        d               -- 删除
+
+*pk-lsp*
+        gn              -- 下一处报错
+        gp              -- 上一处报错
+        <leader> e      -- 显示报错详情
+
+*pk-goto-preview*
+        gd              -- 定义预览
+        gt              -- 类型定义预览
+        gi              -- 实现预览
+        gD              -- 声明预览
+        gr              -- 参考预览
+        gw              -- 关闭预览窗口
+
+*pk-commend*
+n       gcc                 --使用逐行切换注释当前行
+n       gbc                 --使用分块切换注释当前行
+n       [count]gcc          --使用逐行切换作为前缀计数给出的行数
+n       [count]gbc          --使用块方式切换作为前缀计数给出的行数
+n       gc[count]{motion}   --使用逐行注释切换区域{待处理操作}
+n       gb[count]{motion}   --使用分块注释切换区域{待处理操作}
+ v      gc                  --使用逐行切换注释区域
+ v      gb                  --使用区块切换注释区域
+
+
+-- *p-command* -----------------------------------------------------------------------------------------
+*pc-lsp*
+    LspLog              -- 日志
+    LspInfo             -- 信息 
+
+    LspInstall          -- 安装
+    LspUninstall        -- 卸载
+
+    LspStart            -- 开启 
+    LspStop             -- 停止
+    LspRestart          -- 重启 
+
+*pc-tree*
+    NvimTreeOpen                    -- 打开 NvimTree 窗口
+    NvimTreeClose                   -- 关闭 NvimTree 窗口
+    NvimTreeToggle                  -- 切换 NvimTree 窗口的显示和隐藏状态
+    NvimTreeCollapse                -- 折叠 NvimTree 文件树。
+    NvimTreeCollapseKeepBuffers     -- 
+    NvimTreeFindFile                -- 打开 NvimTree 窗口,将光标移动到当前缓冲区对应的文件位置
+    NvimTreeFindFileToggle          -- 切换 NvimTree 的显示状态，并将光标定位到当前文件的位置
+    NvimTreeFocus                   -- 聚焦 NvimTree 窗口
+    NvimTreeRefresh                 -- 刷新 NvimTree 文件树
+    NvimTreeResize                  -- 调整 NvimTree 窗口大小，附加参数指定新的宽度
+    NvimTreeClipboard               -- 
+    NvimTreeHiTest                  --
+    NvimWebDeviconsHiTest           --
