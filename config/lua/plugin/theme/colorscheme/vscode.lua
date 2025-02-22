@@ -1,3 +1,4 @@
+---@type theme.colorscheme.vscode
 return {
     "Mofiqul/vscode.nvim",
     event = {"VeryLazy"},

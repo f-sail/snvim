@@ -1,4 +1,4 @@
----@type nvim-tree.config
+---@type support.nvim-tree
 return {
     "nvim-tree/nvim-tree.lua",
     version = "*",

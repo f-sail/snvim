@@ -1,4 +1,4 @@
----@type mason-lspconfig.config
+---@type lsp.mason-lspconfig
 return {
     "williamboman/mason-lspconfig.nvim",
     event = "VeryLazy",

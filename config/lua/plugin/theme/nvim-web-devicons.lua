@@ -1,4 +1,4 @@
----@type nvim-web-devicons.config
+---@type theme.nvim-web-devicons
 return {
     "nvim-tree/nvim-web-devicons",
     config = function()

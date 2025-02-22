@@ -1,4 +1,4 @@
----@type comment.config
+---@type support.comment
 return {
     "numToStr/Comment.nvim",
     event = "VeryLazy",

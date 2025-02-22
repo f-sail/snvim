@@ -1,4 +1,4 @@
----@type telescope.config
+---@type support.telescope
 return {
     "nvim-telescope/telescope.nvim", tag = "0.1.8",
     cmd = "Telescope",

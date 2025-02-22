@@ -1,4 +1,4 @@
----@type nvim-autopairs.config
+---@type support.nvim-autopairs
 
 return {
     "windwp/nvim-autopairs",

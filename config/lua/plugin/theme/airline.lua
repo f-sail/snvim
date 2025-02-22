@@ -1,4 +1,4 @@
----@type airline.config
+---@type theme.airline
 return {
     "vim-airline/vim-airline",
     dependencies = {

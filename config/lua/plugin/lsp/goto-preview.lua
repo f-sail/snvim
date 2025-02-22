@@ -1,4 +1,4 @@
----@type goto-preview.config
+---@type lsp.goto-preview
 return {
     "rmagatti/goto-preview",
     event = "BufEnter",

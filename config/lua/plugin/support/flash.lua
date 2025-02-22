@@ -1,4 +1,4 @@
----@type flash.config
+---@type support.flash
 return {
   "folke/flash.nvim",
   event = "VeryLazy",

@@ -1,4 +1,4 @@
----@type icons.config
+---@type theme.icons
 return {
     diagnostics = {
         Error = 'í¯€í±‘',

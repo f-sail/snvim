@@ -1,4 +1,4 @@
----@type nvim-lspconfig.config
+---@type lsp.nvim-lspconfig
 return {
     "neovim/nvim-lspconfig",
     event = {

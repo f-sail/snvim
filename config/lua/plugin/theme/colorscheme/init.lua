@@ -1,4 +1,4 @@
----@type colorscheme.init
+---@type theme.colorscheme.init
 return {
     vscode      = require("plugin.theme.colorscheme.vscode"),
     monokai     = {"tanvirtin/monokai.nvim", event = {"VimEnter"}},
