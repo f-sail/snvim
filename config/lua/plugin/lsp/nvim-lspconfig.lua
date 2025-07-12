@@ -22,7 +22,8 @@ return {
         require("lspconfig").clangd.setup({
             cmd = {'clangd', '--background-index', '--clang-tidy', '--log=verbose'},
             init_options = {
-                fallbackFlags = { '-std=c++17' },
+                -- fallbackFlags = { '-std=c++17' },
+                fallbackFlags = { '-std=c++20' },
             },
         })
         -- 报错信息
@@ -34,8 +35,10 @@ return {
             severity_sort = true,
         })
         -- 快捷键绑定（按需修改）
-        vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = "显示错误详情" })
-        vim.keymap.set('n', 'gp', vim.diagnostic.goto_prev, { desc = "上一个诊断" })
-        vim.keymap.set('n', 'gn', vim.diagnostic.goto_next, { desc = "下一个诊断" })
+        vim.keymap.set('n', '<leader>ee', vim.diagnostic.open_float, { desc = "显示错误详情" })
+        vim.keymap.set('n', '<leader>eq', vim.lsp.buf.code_action, { desc = "quickfix" })
+        vim.keymap.set('n', '<leader>el', vim.diagnostic.setloclist, { desc = "list" })
+        vim.keymap.set('n', '<leader>ep', vim.diagnostic.goto_prev, { desc = "上一个诊断" })
+        vim.keymap.set('n', '<leader>en', vim.diagnostic.goto_next, { desc = "下一个诊断" })
     end
 }
