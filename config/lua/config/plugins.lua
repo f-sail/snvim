@@ -52,6 +52,8 @@ require("lazy").setup({
     -- comment
     require("plugin.support").comment,
 
+    --template
+    require("plugin.support").template,
 
 -- lsp
     -- mason    

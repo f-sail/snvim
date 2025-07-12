@@ -2,6 +2,11 @@
 return {
     "nvim-treesitter/nvim-treesitter",
     event = "VimEnter",
+    build = ':TSUpdate',
+    dependencies = {
+        -- require("plugin.theme.rainbow"),
+        -- { "luochen1990/rainbow", }
+    },
     config = function()
         require'nvim-treesitter.configs'.setup {
             -- A list of parser names, or "all" (the listed parsers MUST always be installed)
@@ -27,7 +32,7 @@ return {
                 -- disable highlighting for the `tex` filetype, you need to include `latex` in this list as this is
                 -- the name of the parser)
                 -- list of language that will be disabled
-                disable = { "c", "rust" },
+                -- disable = { "c", "rust" },
                 -- Or use a function for more flexibility, e.g. to disable slow treesitter highlight for large files
                 disable = function(lang, buf)
                     local max_filesize = 100 * 1024 -- 100 KB
@@ -62,23 +67,22 @@ return {
                 extended_mode = true,
                 max_file_lines = nil,
                 colors = {
-                    "#cc241d",
-                    "#a89984",
-                    "#b16286",
-                    "#d79921",
-                    "#689d6a",
-                    "#d65d0e",
-                    "#458588",
+                    "#FFD700",  -- 金色
+                    "#DA70D6",  -- 紫色
+                    "#179FFF",  -- 蓝色
+                    "#98C379",  -- 绿色
+                    "#FF6E6E",  -- 红色
+                    "#56B6C2",  -- 青色
                 },
-                termcolors = {
-                    "Red",
-                    "Green",
-                    "Yellow",
-                    "Blue",
-                    "Magenta",
-                    "Cyan",
-                    "White",
-                },
+                -- termcolors = {
+                --     "Red",
+                --     "Green",
+                --     "Yellow",
+                --     "Blue",
+                --     "Magenta",
+                --     "Cyan",
+                --     "White",
+                -- },
             },
         }
     end

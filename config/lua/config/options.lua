@@ -36,7 +36,7 @@ local options = {
     whichwrap = "bs<>[]hl",                     -- 允许哪些“水平”键移动到上/下一行
     confirm = true,                             -- 当缓冲区有未保存的更改时，退出是否询问
 -- fold 
-    foldlevel = 1,                              -- 
+    foldlevel = 0,                              -- 
     foldcolumn = "2",                             -- 设置折叠显示的列数
     -- foldmethod = "indent",                      -- 设置折叠模式
     foldmethod = "marker",                      -- 设置折叠模式
