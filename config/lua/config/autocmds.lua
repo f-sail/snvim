@@ -127,3 +127,15 @@ vim.api.nvim_create_autocmd({ "BufWritePre" }, {
 vim.api.nvim_create_user_command("Sourcehelptags", function()
     vim.cmd(":helptags $HOME/.local/share/nvim/runtime/doc")
 end, {})
+
+-- skip specific chars by tab
+vim.keymap.set('i', '<Tab>',function() 
+    local next_char = vim.fn.strcharpart(vim.fn.getline('.'), vim.fn.col('.') - 1, 1)
+    local skip_chars = {'>',')', ']', '}', '\"', '\'', '`', ','}
+    for _, char in ipairs(skip_chars) do
+        if next_char == char then
+            return "<Right>"
+        end
+    end
+    return "<Tab>"
+end, {expr = true})
